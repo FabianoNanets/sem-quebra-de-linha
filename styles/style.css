@@ -26,7 +26,7 @@ section {
 
 section textarea {
     width: 70vw;
-    height: 60vh;
+    height: 50vh;
     border: 3px solid #000;
     border-radius: 5px;
 }
