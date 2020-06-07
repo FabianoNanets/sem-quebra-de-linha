@@ -15,3 +15,8 @@ edit.addEventListener("click", () => {
   console.log(resultado)
   textarea.value = resultado;
 })
+
+document.getElementById('copiar').addEventListener('click', () =>{
+  document.getElementById('texto').select();
+  document.execCommand('copy');
+});
