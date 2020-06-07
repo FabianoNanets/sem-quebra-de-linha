@@ -18,11 +18,28 @@
     </nav>
 
     <section class="txt-area">
-        <textarea id='texto' placeholder="Coloque seu texto aqui."></textarea>
-        <br>
-        <button id="change" onclick="quebraLinha()">Tirar quebra de linha</button>
-        <button id='copiar' onclick="fazerCopia()">Copiar</button>
-        <button id='limpar' onclick="limparTela()">Limpar</button>
+        <div class="grid-txts">
+            <textarea id='texto' placeholder="Coloque seu texto aqui."></textarea>
+        </div>
+        <div class="grid-botao">
+            <div>
+                <button id="change" onclick="quebraLinha()">Tirar quebra de linha</button>
+            </div>
+            <div class="selecionar">
+                <input type="radio" class="garantia" value="garantia"> Garantia <br> ou <br>
+                <input type="text" id="palavra"><br><br>
+                <button id='palavraSelecao' onclick="fazerSelecao()">Selecionar</button>
+            </div>
+            <div>
+                <button id='copiar' onclick="fazerCopia()">Copiar</button>
+            </div>
+            <div>
+                <button id='limpar' onclick="limparTela()">Limpar</button>
+            </div> 
+        </div>
+        <div class="grid-txts">
+            <div><h4>Texto Final</h4><br><div contenteditable="true" id="textoFinal" class="textoFinal"></div></div>
+        </div>
     </section>
 
     <footer>
