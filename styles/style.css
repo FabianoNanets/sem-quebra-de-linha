@@ -26,9 +26,53 @@ nav img {
 
 .txt-area textarea {
     width: 70vw;
-    height: 60vh;
+    height: 55vh;
     border: 3px solid #000;
     border-radius: 5px;
+}
+
+.textoFinal {
+    width: 70vw;
+    height: 55vh;
+    border: 3px solid #000;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+
+div.textoFinal {
+    max-height: 70vw;
+    overflow: auto;
+}
+
+.grid-txts img {
+    width: 100%;
+}
+
+.grid-txts h4 {
+    font-family: cursive;
+}
+
+.grid-txts {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-botao {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+}
+
+.grid-botao .selecionar {
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    padding-top: 0.5em;
 }
 
 button {
@@ -37,7 +81,9 @@ button {
     border-radius: 5em;
     width: 150px;
     height: 50px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
